@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "shrikhand";
+  src: url("../fonts/shrikhand/Shrikhand-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+h1 {
+  font-family: "shrikhand", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-align: center;
+  box-shadow: 0px 5px 5px #F2F2F2;
+  padding-bottom: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

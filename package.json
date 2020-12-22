@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "sass-prod": "sass ./sass/main.scss:./public/css/style.css --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmandaSrisourath/AmandaSrisourath_3_22122020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmandaSrisourath/AmandaSrisourath_3_22122020/issues"
+  },
+  "homepage": "https://github.com/AmandaSrisourath/AmandaSrisourath_3_22122020#readme",
+  "browserslist": "last 4 versions"
+}
