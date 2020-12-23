@@ -16,6 +16,46 @@ h1 {
   text-align: center;
   box-shadow: 0px 5px 5px #F2F2F2;
   padding-bottom: 16px;
+  margin-bottom: 0px;
+}
+
+h2, p {
+  font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#location {
+  background-color: #eaeaea;
+}
+#location #location-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#location .fa-map-marker-alt:before {
+  padding-right: 16px;
+}
+
+#company-description {
+  background-color: #f4f4f4;
+  padding: 16px 24px 32px;
+}
+#company-description p {
+  text-align: center;
+}
+#company-description #explore {
+  display: flex;
+  justify-content: center;
+}
+#company-description #explore #explore-clic {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 16px 24px;
+  border: none;
+  border-radius: 32px 32px;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

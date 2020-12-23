@@ -12,10 +12,59 @@
     font-weight: normal;
 }
 
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
 h1 {
     font-family: 'shrikhand', Arial, Helvetica, sans-serif ;
     font-style: italic;
     text-align: center;
     box-shadow: 0px 5px 5px #F2F2F2;
     padding-bottom: 16px;
+    margin-bottom: 0px;
 } 
+
+h2, p {
+    font-family: "roboto-regular", Arial, Helvetica, sans-serif ;
+    text-align: center;
+}
+
+#location {
+    background-color: darken(#F2F2F2, 3);
+
+    #location-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-map-marker-alt:before {
+        padding-right: 16px;
+    }
+}
+
+#company-description {
+    background-color: #f4f4f4;
+    padding: 16px 24px 32px;
+
+    p {
+        text-align: center;
+    }
+
+    #explore {
+        display: flex;
+        justify-content: center;
+    
+        #explore-clic {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            color: white;
+            background: linear-gradient($color-secondary, $color-primary);
+            padding: 16px 24px;
+            border: none;
+            border-radius: 32px 32px;
+            outline: none;
+        }
+    }
+}
