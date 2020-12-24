@@ -1,0 +1,134 @@
+#location {
+    background-color: darken($main-grey, 4);
+
+    #location-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .fa-map-marker-alt:before {
+        padding-right: 16px;
+    }
+}
+
+#company-description {
+    background-color: $main-grey;
+    padding: 16px 24px 32px;
+    text-align: center;
+
+    #explore {
+        display: flex;
+        justify-content: center;
+    
+        #explore-clic {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            color: white;
+            background: linear-gradient($color-secondary, $color-primary);
+            padding: 16px 24px;
+            border: none;
+            border-radius: 32px 32px;
+            outline: none;
+            @include shadow-box;
+        }
+    }
+}
+
+nav {
+    margin: 32px 16px; 
+    
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        background-color: $main-grey;
+        border-radius: 16px 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-bottom: 16px;
+        @include shadow-box;
+    }
+
+    .number {
+        position: absolute;
+        left: 15px;
+        color: white;
+        background-color: $color-primary;
+        border-radius: 16px 16px;
+        padding: 3px 8px;
+    }
+    
+    .fas {
+        color: darken($main-grey, 45);
+        padding-left: 40px;
+        padding-right: 32px;
+    }
+
+    .nav-menu-purple {
+        background-color: lighten($color-primary, 35);
+    }
+
+    .fa-store-purple {
+        color: $color-primary;
+    }
+}
+
+.cover-image {
+    object-fit: cover;
+}
+
+h4, p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+section {
+    margin-top: 32px;
+    padding: 32px 16px;
+    background-color: $main-grey;
+    
+    .restaurant {
+        background-color: white;
+        border-radius: 16px 16px;
+        margin-bottom: 16px;
+        @include shadow-box;
+    }
+
+    .restaurant-image {
+        width: 326px;
+        height: 180px;
+        border-radius: 16px 16px 1px 1px;
+    }
+
+    .button-new {
+        position: absolute;
+        padding: 8px 16px;
+        margin-top: 16px;
+        margin-left: 226px;
+        background-color: $color-tertiary;
+        border: none;
+        border-radius: 2px 2px;
+        color: darken($color-tertiary, 40);
+    }
+
+    .restaurant-description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px 8px;
+    }
+
+    .fa-heart {
+        font-size: 24px;
+    }
+        .fa-heart:hover {
+            background: linear-gradient($color-primary, $color-secondary);
+            cursor: pointer;
+        }
+
+        .fa-heart:focus {
+            outline: none;
+        }
+}
