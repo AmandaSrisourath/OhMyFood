@@ -1,5 +1,5 @@
-@import "./base/fonts";
 @import "./Utils/variables";
+@import "./base/fonts";
 
 body {
     font-family: "roboto-regular", Arial, Helvetica, sans-serif ;
@@ -22,6 +22,8 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .fa-map-marker-alt:before {
@@ -53,12 +55,7 @@ h1 {
 }
 
 nav {
-    margin: 24px 16px;
-    
-    ul {    
-        list-style-type: none;
-        padding-left: 0px;
-    }   
+    margin: 32px 16px; 
     
     .nav-menu {
         display: flex;
@@ -93,4 +90,62 @@ nav {
     .fa-store-purple {
         color: $color-primary;
     }
+}
+
+.cover-image {
+    object-fit: cover;
+}
+
+h4, p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+section {
+    margin-top: 32px;
+    padding: 16px 16px;
+    background-color: $main-grey;
+    
+    .restaurant {
+        background-color: white;
+        border-radius: 16px 16px;
+        margin-bottom: 16px;
+        box-shadow: 0px 5px 5px darken($main-grey, 8);
+    }
+
+    .restaurant-image {
+        width: 326px;
+        height: 180px;
+        border-radius: 16px 16px 1px 1px;
+    }
+
+    .button-new {
+        position: absolute;
+        padding: 8px 16px;
+        margin-top: 16px;
+        margin-left: 226px;
+        background-color: $color-tertiary;
+        border: none;
+        border-radius: 2px 2px;
+        color: darken($color-tertiary, 40);
+    }
+
+    .restaurant-description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px 8px;
+    }
+
+    .fa-heart {
+        font-size: 24px;
+    }
+        .fa-heart:hover {
+            background: linear-gradient($color-primary, $color-secondary);
+            cursor: pointer;
+        }
+
+        .fa-heart:focus {
+            outline: none;
+        }
 }
