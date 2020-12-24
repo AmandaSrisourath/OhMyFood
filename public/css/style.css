@@ -103,7 +103,7 @@ h4, p {
 
 section {
   margin-top: 32px;
-  padding: 16px 16px;
+  padding: 32px 16px;
   background-color: #F7F7F7;
 }
 section .restaurant {
@@ -142,6 +142,42 @@ section .fa-heart:hover {
 }
 section .fa-heart:focus {
   outline: none;
+}
+
+footer {
+  background-color: #383838;
+  padding: 16px 24px 24px;
+}
+footer h5 {
+  font-family: "shrikhand", Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: white;
+}
+footer p {
+  color: white;
+}
+footer .footer-desciption {
+  display: flex;
+  align-items: center;
+}
+footer .footer-icon {
+  color: white;
+  font-size: small;
+}
+footer .fa-utensils::before {
+  margin-right: 14px;
+}
+footer .fa-hands-helping::before {
+  font-size: smaller;
+  margin-right: 12px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
