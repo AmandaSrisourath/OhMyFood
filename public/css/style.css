@@ -10,37 +10,37 @@
   font-style: normal;
   font-weight: normal;
 }
+body {
+  font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+}
+
 h1 {
   font-family: "shrikhand", Arial, Helvetica, sans-serif;
   font-style: italic;
   text-align: center;
-  box-shadow: 0px 5px 5px #F2F2F2;
+  position: relative;
+  box-shadow: 0px 5px 5px #e3e3e3;
   padding-bottom: 16px;
   margin-bottom: 0px;
 }
 
-h2, p {
-  font-family: "roboto-regular", Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
 #location {
-  background-color: #eaeaea;
+  background-color: #ededed;
 }
 #location #location-description {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 #location .fa-map-marker-alt:before {
   padding-right: 16px;
 }
 
 #company-description {
-  background-color: #f4f4f4;
+  background-color: #F7F7F7;
   padding: 16px 24px 32px;
-}
-#company-description p {
   text-align: center;
 }
 #company-description #explore {
@@ -55,6 +55,92 @@ h2, p {
   padding: 16px 24px;
   border: none;
   border-radius: 32px 32px;
+  box-shadow: 0px 5px 5px #e3e3e3;
+  outline: none;
+}
+
+nav {
+  margin: 32px 16px;
+}
+nav .nav-menu {
+  display: flex;
+  align-items: center;
+  background-color: #F7F7F7;
+  border-radius: 16px 16px;
+  box-shadow: 0px 5px 5px #e3e3e3;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+}
+nav .number {
+  position: absolute;
+  left: 15px;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 16px 16px;
+  padding: 3px 8px;
+}
+nav .fas {
+  color: #848484;
+  padding-left: 40px;
+  padding-right: 32px;
+}
+nav .nav-menu-purple {
+  background-color: #f2eafb;
+}
+nav .fa-store-purple {
+  color: #9356DC;
+}
+
+.cover-image {
+  object-fit: cover;
+}
+
+h4, p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+section {
+  margin-top: 32px;
+  padding: 16px 16px;
+  background-color: #F7F7F7;
+}
+section .restaurant {
+  background-color: white;
+  border-radius: 16px 16px;
+  margin-bottom: 16px;
+  box-shadow: 0px 5px 5px #e3e3e3;
+}
+section .restaurant-image {
+  width: 326px;
+  height: 180px;
+  border-radius: 16px 16px 1px 1px;
+}
+section .button-new {
+  position: absolute;
+  padding: 8px 16px;
+  margin-top: 16px;
+  margin-left: 226px;
+  background-color: #99E2D0;
+  border: none;
+  border-radius: 2px 2px;
+  color: #278870;
+}
+section .restaurant-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px 8px;
+}
+section .fa-heart {
+  font-size: 24px;
+}
+section .fa-heart:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  cursor: pointer;
+}
+section .fa-heart:focus {
   outline: none;
 }
 
