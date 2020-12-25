@@ -2,22 +2,43 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 16px 90px 16px 16px;
+
+    h1 {
+        margin-top: 0px;
+    }
 }
 
 #cover-image {
-    width: 360px;
-    height: 190px;
+    width: 358px;
+    height: 220px;
     position: relative;
 }
 
 section {
     margin-top: 0px;
+    padding-top: 40px;
+    border-radius: 40px 40px 1px 1px;
+    position: relative;
+    top: -40px;
+
+    h3 {
+        text-transform: uppercase;
+        margin-top: 40px;
+    }
 
     #menu-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 0px;
+        padding-right: 16px;
+
+        h2 {
+            font-family: shrikhand;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
     }
 
     .menu {
@@ -39,11 +60,15 @@ section {
             margin-bottom: 16px;
             color: white;
             background: linear-gradient($color-secondary, $color-primary);
-            padding: 16px 24px;
+            padding: 16px 48px;
             border: none;
             border-radius: 32px 32px;
             outline: none;
             @include shadow-box;
+        }
+
+        #order-clic:hover {
+            cursor: pointer;
         }
     }
 }
