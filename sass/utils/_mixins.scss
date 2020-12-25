@@ -1,3 +1,59 @@
 @mixin shadow-box {
     box-shadow: 0px 5px 5px darken($main-grey, 8);
 }
+
+@mixin header {
+    font-family: 'shrikhand', Arial, Helvetica, sans-serif ;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    padding-bottom: 16px;
+    @include shadow-box;
+
+    h1 {
+        margin-bottom: 0px;
+    } 
+}
+
+@mixin footer {
+    background-color: darken($main-grey, 75);
+    padding: 16px 24px 24px;
+    
+    h5 {
+        font-family: 'shrikhand', Arial, Helvetica, sans-serif ;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: normal;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    .footer-desciption {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-icon{
+        color: white;
+        font-size: small;
+    }
+
+    .fa-utensils::before {
+        margin-right: 14px;
+    }
+
+    .fa-hands-helping::before {
+        font-size: smaller;
+        margin-right: 12px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
