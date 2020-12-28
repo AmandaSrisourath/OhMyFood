@@ -4,10 +4,6 @@
 @import "./pages/home";
 @import "./pages/menu";
 
-body {
-    font-family: "roboto-regular", Arial, Helvetica, sans-serif ;
-}
-
 header {
     @include header;
 }
