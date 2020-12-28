@@ -1,5 +1,9 @@
 #location {
     background-color: darken($main-grey, 4);
+    
+    p {
+        margin-bottom: 0px;
+    }
 
     #location-description {
         display: flex;
@@ -10,6 +14,7 @@
     }
 
     .fa-map-marker-alt:before {
+        color: darken($main-grey, 70);
         padding-right: 16px;
     }
 }
@@ -19,12 +24,22 @@
     padding: 16px 24px 32px;
     text-align: center;
 
+    h2 {
+        font-family: "roboto-medium";
+    }
+
+    p {
+        font-family: "roboto-thin";
+        font-size: 18px;
+    }
+
     #explore {
         display: flex;
         justify-content: center;
     
         #explore-clic {
-            margin-top: 16px;
+            font-size: 14px;
+            margin-top: 24px;
             margin-bottom: 16px;
             color: white;
             background: linear-gradient($color-secondary, $color-primary);
@@ -37,8 +52,17 @@
     }
 }
 
+h3 {
+    font-family: "roboto-medium";
+    font-size: 24px;
+}
+
 nav {
-    margin: 32px 16px; 
+    margin: 40px 16px; 
+
+    p {
+        font-family: "roboto-medium";
+    }
     
     .nav-menu {
         display: flex;
@@ -75,10 +99,6 @@ nav {
     }
 }
 
-.cover-image {
-    object-fit: cover;
-}
-
 h4, p {
     margin-top: 4px;
     margin-bottom: 4px;
@@ -96,8 +116,12 @@ section {
         @include shadow-box;
     }
 
+    .cover-image {
+        object-fit: cover;
+    }
+
     .restaurant-image {
-        width: 326px;
+        width: 327px;
         height: 180px;
         border-radius: 16px 16px 1px 1px;
     }
@@ -118,6 +142,16 @@ section {
         justify-content: space-between;
         align-items: center;
         padding: 8px 16px 8px;
+    }
+
+    h4 {
+        font-family: "roboto-medium";
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 17px;
+        font-family: "roboto-light";
     }
 
     .fa-heart {
