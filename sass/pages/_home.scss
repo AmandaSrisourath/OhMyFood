@@ -139,13 +139,6 @@ section {
         color: darken($color-tertiary, 40);
     }
 
-    .restaurant-description {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 16px 8px;
-    }
-
     h4 {
         font-family: "roboto-medium";
         font-size: 18px;
@@ -156,15 +149,46 @@ section {
         font-family: "roboto-light";
     }
 
+    .restaurant-link {
+        text-decoration: none;
+        color: black;
+        :active {
+            color: lighten($color-primary, 10);
+        }
+    }
+
+    .restaurant-description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 16px 8px;
+    }
+
     .fa-heart {
         font-size: 24px;
-    }
-        .fa-heart:hover {
-            background: linear-gradient($color-primary, $color-secondary);
-            cursor: pointer;
-        }
-
+    
         .fa-heart:focus {
             outline: none;
         }
+    }
+}
+
+.fa-heart {
+    :hover + .full-heart {
+        transform: scale(1);
+        span {
+            transform: translateY(0);
+        }
+    }
+}
+
+.full-heart {
+    transform: scale(0.1);
+    transition: transform 330ms ease-in-out;
+    overflow: hidden;
+    span {
+        display: inline-block;
+        transform: translateY(250%);
+        transition: transform 280ms ease-out 50ms;
+    }
 }

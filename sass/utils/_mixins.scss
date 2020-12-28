@@ -17,7 +17,7 @@
 
 @mixin footer {
     background-color: darken($main-grey, 75);
-    padding: 16px 24px 24px;
+    padding: 16px 24px 32px;
     
     h5 {
         font-family: 'shrikhand', Arial, Helvetica, sans-serif ;
@@ -30,6 +30,7 @@
     }
 
     p {
+        font-family: "roboto-regular";
         color: white;
     }
 
@@ -53,6 +54,7 @@
     }
 
     a {
+        font-family: "roboto-regular";
         color: white;
         text-decoration: none;
     }
