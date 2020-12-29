@@ -31,6 +31,17 @@
         font-size: 18px;
         text-transform: uppercase;
         margin-top: 40px;
+        position: relative;
+        padding-bottom: 8px;
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            content: "";
+            background: $color-tertiary;
+        }
     }
 
     #menu-title {
@@ -52,7 +63,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 8px 16px;
+        padding-left: 16px;
         margin-bottom: 16px;
         background-color: white;
         border-radius: 16px 16px;
@@ -88,10 +99,38 @@
             border-radius: 32px 32px;
             outline: none;
             @include shadow-box;
-        }
-
-        #order-clic:hover {
-            cursor: pointer;
+            &:hover {
+                background: lighten($color-secondary, 10);
+                cursor: pointer;
+            }
         }
     }
 }
+
+.fa-check-circle {
+    color: white;
+    background-color: $color-tertiary;
+    font-size: 20px;
+    padding: 16px 20px;
+    border-radius: 1px 16px 16px 1px;
+    :hover {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.starter {
+    transition: all 100ms ease-in-out;
+    transform: translate(0px, -1vh);
+}
+
+.dish {
+    transition: all 500ms ease-in-out;
+    transform: translate(0px, -1vh);
+}
+
+.dessert {
+    transition: all 1000ms ease-in-out;
+    transform: translate(0px, -1vh);
+}
+
+    

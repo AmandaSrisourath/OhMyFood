@@ -1,0 +1,44 @@
+@mixin footer {
+    background-color: darken($main-grey, 75);
+    padding: 16px 24px 32px;
+    
+    h5 {
+        font-family: 'shrikhand', Arial, Helvetica, sans-serif ;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: normal;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: white;
+    }
+
+    p {
+        font-family: "roboto-regular";
+        color: white;
+    }
+
+    .footer-desciption {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-icon{
+        color: white;
+        font-size: small;
+    }
+
+    .fa-utensils::before {
+        margin-right: 14px;
+    }
+
+    .fa-hands-helping::before {
+        font-size: smaller;
+        margin-right: 12px;
+    }
+
+    a {
+        font-family: "roboto-regular";
+        color: white;
+        text-decoration: none;
+    }
+}
