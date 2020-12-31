@@ -1,7 +1,5 @@
 #header-la-palette {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-between-center;
     padding: 16px 90px 16px 16px;
 
     .fa-arrow-left {
@@ -20,17 +18,20 @@
 }
 
 #la-palette {
-    margin-top: 0px;
-    padding-top: 40px;
+    padding-top: 32px;
     border-radius: 40px 40px 1px 1px;
     position: relative;
     margin-top: -40px;
+
+    #heart {
+        @include heart-fill;
+    }
 
     h3 {
         font-family: "roboto-light";
         font-size: 18px;
         text-transform: uppercase;
-        margin-top: 40px;
+        margin-top: 32px;
         position: relative;
         padding-bottom: 8px;
         &::after {
@@ -45,29 +46,70 @@
     }
 
     #menu-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-between-center;
         margin-top: 0px;
         padding-right: 16px;
         font-size: 18px;
 
         h2 {
             font-family: shrikhand;
-            margin-top: 0px;
-            margin-bottom: 0px;
+            margin-top: 8px;
+            margin-bottom: 8px;
         }
     }
 
     .menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding-left: 16px;
+        @include flex-between-center;
         margin-bottom: 16px;
         background-color: white;
         border-radius: 16px 16px;
+        padding-left: 10px;
         @include shadow-box;
+        cursor: pointer;
+        &:active {
+            .fa-check-circle {
+                transform: rotate(360deg);
+                transition: transform 300ms ease-in-out;
+            }
+
+            #check {
+                transform: scale(1,1);
+            }
+        }
+    
+        #check {
+            color: white;
+            background-color: $color-tertiary;
+            font-size: 20px;
+            padding: 24px 20px;
+            border-radius: 1px 16px 16px 1px;
+            transform: scale(0,1);
+            transform-origin: right;
+            transition: transform 400ms ease-in-out;
+        }
+
+        .fa-check-circle {
+            transform: rotate(180deg);
+        }
+
+        .menu-description {
+            display: flex;
+            align-items: flex-end;
+            flex-grow: 1;
+            @include overflow;
+            &:active {
+                @include overflow;
+            }
+        }
+
+        .title-description {
+            flex-grow: 1;
+            @include overflow;
+        }
+
+        h4, p {
+            @include overflow;
+        }
 
         h4 {
             font-family: "roboto-medium";
@@ -81,56 +123,34 @@
 
         .price {
             font-family: "roboto-medium";
-        }
-    }
-
-    #order {
-        display: flex;
-        justify-content: center;
-
-        #order-clic {
-            font-size: 14px;
-            margin-top: 24px;
-            margin-bottom: 16px;
-            color: white;
-            background: linear-gradient($color-secondary, $color-primary);
-            padding: 16px 48px;
-            border: none;
-            border-radius: 32px 32px;
-            outline: none;
-            @include shadow-box;
-            &:hover {
-                background: lighten($color-secondary, 10);
-                cursor: pointer;
-            }
+            margin-left: 16px;
+            margin-right: 16px;
         }
     }
 }
 
-.fa-check-circle {
-    color: white;
-    background-color: $color-tertiary;
-    font-size: 20px;
-    padding: 16px 20px;
-    border-radius: 1px 16px 16px 1px;
-    :hover {
-        transform: scale(1) rotate(0deg);
+#order {
+    display: flex;
+    justify-content: center;
+
+    #order-clic { 
+        padding: 16px 48px;
+        @include button;
+        @include shadow-box;
     }
 }
 
 .starter {
-    transition: all 100ms ease-in-out;
-    transform: translate(0px, -1vh);
+    transition: all 1000ms ease-in-out;
+    transform: translate(0px, 0vh);
 }
 
 .dish {
-    transition: all 500ms ease-in-out;
-    transform: translate(0px, -1vh);
+    transition: all 2000ms ease-in-out;
+    transform: translate(0px, 0vh);
 }
 
 .dessert {
-    transition: all 1000ms ease-in-out;
-    transform: translate(0px, -1vh);
+    transition: all 3000ms ease-in-out;
+    transform: translate(0px, 0vh);
 }
-
-    

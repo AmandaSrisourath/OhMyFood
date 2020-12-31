@@ -40,20 +40,9 @@
         justify-content: center;
     
         #explore-clic {
-            font-size: 14px;
-            margin-top: 24px;
-            margin-bottom: 16px;
-            color: white;
-            background: linear-gradient($color-secondary, $color-primary);
             padding: 16px 24px;
-            border: none;
-            border-radius: 32px 32px;
-            outline: none;
+            @include button;
             @include shadow-box;
-            &:hover {
-                background: lighten($color-secondary, 10);
-                cursor: pointer;
-            }
         }   
     }
 }
@@ -162,9 +151,7 @@ section {
     }
 
     .restaurant-description {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-between-center;
         padding: 8px 16px 8px;
     }
 
@@ -177,19 +164,6 @@ section {
     }
 
     #heart {
-        &:hover {
-            #full-heart {
-                transform: scale(1);
-            }
-        }
-
-        color: $color-primary;
-
-        #full-heart {
-            transform: scale(0);
-            transition: transform 400ms ease-in-out;
-            transform-origin: bottom center;
-            position: absolute;
-        }
+        @include heart-fill;
     }
 }
