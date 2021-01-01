@@ -1,3 +1,7 @@
+body {
+    @include mobile-body;
+}
+
 #location {
     background-color: darken($main-grey, 4);
     
@@ -65,12 +69,13 @@ nav {
         padding-top: 24px;
         padding-bottom: 24px;
         margin-bottom: 16px;
+        position: relative;
         @include shadow-box;
     }
 
     .number {
         position: absolute;
-        left: 15px;
+        left: -13px;
         color: white;
         background-color: $color-primary;
         border-radius: 16px 16px;
@@ -103,6 +108,8 @@ section {
     background-color: $main-grey;
     
     .restaurant {
+        display: block;
+        width: fit-content;
         background-color: white;
         border-radius: 16px 16px;
         margin-bottom: 16px;
@@ -114,7 +121,7 @@ section {
     }
 
     .restaurant-image {
-        width: 327px;
+        width: 328px;
         height: 180px;
         border-radius: 16px 16px 1px 1px;
     }
@@ -229,3 +236,35 @@ section {
   #spinner {
     animation: loadingOut 0s 2s forwards;
   }
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+    body {
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #restaurant-menu {
+        display: flex;
+        flex-wrap: wrap;
+        .restaurant {
+            margin: 15px 15px;
+        }
+    }
+
+    h3 {
+        margin-left: 24px;
+    }
+
+    #navigation {
+        display: flex;
+        .nav-menu {
+            position: relative;
+            margin-right: 16px;
+            margin-left: 16px;
+            .number {
+                left: -13px;
+            }
+        }
+    }
+}
