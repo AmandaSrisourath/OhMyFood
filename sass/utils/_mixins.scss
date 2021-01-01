@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin overflow {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -31,14 +37,14 @@
 
 @mixin heart-fill {
     &:active {
-        #full-heart {
+        .full-heart {
             transform: scale(1);
         }
     }
 
     color: $color-primary;
 
-    #full-heart {
+    .full-heart {
         transform: scale(0);
         transition: transform 400ms ease-in-out;
         transform-origin: bottom center;
