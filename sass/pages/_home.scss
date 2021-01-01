@@ -268,3 +268,42 @@ section {
         }
     }
 }
+
+@media only screen and (min-width : 1024px) {
+    body {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #restaurant-menu {
+        display: flex;
+        flex-wrap: wrap;
+        .restaurant {
+            margin: 15px 15px;
+            .restaurant-image {
+                width: 454px;
+            }
+        }
+    }
+
+    h3 {
+        margin-left: 24px;
+    }
+
+    #navigation {
+        display: flex;
+        justify-content: center;
+        .nav-menu {
+            position: relative;
+            margin-right: 16px;
+            margin-left: 16px;
+            .number {
+                left: -13px;
+            }
+        }
+    }
+    nav p {
+        padding-right: 32px;
+    }
+}
