@@ -64,16 +64,19 @@
         background-color: white;
         border-radius: 16px 16px;
         padding-left: 10px;
+        height: 72px;
         @include shadow-box;
         cursor: pointer;
         &:active {
             .fa-check-circle {
                 transform: rotate(360deg);
-                transition: transform 300ms ease-in-out;
+                transition: transform 400ms ease-in-out;
             }
 
             #check {
                 transform: scale(1,1);
+                width: auto;
+                padding: 0 20px;
             }
         }
     
@@ -81,11 +84,17 @@
             color: white;
             background-color: $color-tertiary;
             font-size: 20px;
-            padding: 24px 20px;
             border-radius: 1px 16px 16px 1px;
             transform: scale(0,1);
             transform-origin: right;
             transition: transform 400ms ease-in-out;
+            transition: padding 400ms ease-in-out;
+            width: 0px;
+            height: 72px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .fa-check-circle {
@@ -140,17 +149,22 @@
     }
 }
 
+@keyframes fadein {
+    to {opacity: 1;}
+}
+
+.starter, .dish, .dessert {
+    opacity: 0;
+}
+
 .starter {
-    transition: all 1000ms ease-in-out;
-    transform: translate(0px, 0vh);
+   animation: fadein 2s 1s forwards;
 }
 
 .dish {
-    transition: all 2000ms ease-in-out;
-    transform: translate(0px, 0vh);
+    animation: fadein 2s 1.5s forwards;
 }
 
 .dessert {
-    transition: all 3000ms ease-in-out;
-    transform: translate(0px, 0vh);
+    animation: fadein 2s 2s forwards;
 }
