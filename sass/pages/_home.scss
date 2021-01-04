@@ -116,14 +116,11 @@ section {
         @include shadow-box;
     }
 
-    .cover-image {
-        object-fit: cover;
-    }
-
     .restaurant-image {
         width: 328px;
         height: 180px;
         border-radius: 16px 16px 1px 1px;
+        object-fit: cover;
     }
 
     .button-new {
