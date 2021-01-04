@@ -166,3 +166,55 @@
 .dessert {
     animation: fadein 2s 2s forwards;
 }
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+    #header-la-palette {
+        padding-right: 260px;
+    }
+
+    #cover-image {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h2, h3 {
+        margin-left: 16px;
+    }
+
+    .menu-all {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        width: 210px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (min-width : 1024px) {
+    #header-la-palette {
+        padding-right: 400px;
+    }
+
+    #cover-image {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h2, h3 {
+        margin-left: 16px;
+    }
+
+    .menu-all {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        width: 295px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}
