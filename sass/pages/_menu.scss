@@ -24,10 +24,6 @@
     position: relative;
     margin-top: -40px;
 
-    .heart {
-        @include heart-fill;
-    }
-
     h3 {
         font-family: "roboto-light";
         font-size: 18px;
@@ -217,13 +213,5 @@
         width: 296px;
         margin-right: 8px;
         margin-left: 8px;
-    }
-
-    .heart {
-        &:hover {
-            .full-heart {
-                transform: scale(1);
-            }
-        }
     }
 }
