@@ -310,4 +310,12 @@ section {
     section .button-new {
         margin-left: 352px;
     }
+
+    .heart {
+        &:hover {
+            .full-heart {
+                transform: scale(1);
+            }
+        }
+    }
 }
