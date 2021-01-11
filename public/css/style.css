@@ -85,6 +85,7 @@ body {
 #company-description #explore #explore-clic:hover {
   opacity: 0.8;
   cursor: pointer;
+  box-shadow: 0px 5px 5px #a5a5a5;
 }
 
 h3 {
@@ -362,6 +363,10 @@ body {
 }
 #header-la-palette .fa-arrow-left {
   font-size: 20px;
+  color: black;
+}
+#header-la-palette .fa-arrow-left:active {
+  color: #9356DC;
 }
 #header-la-palette h1 {
   margin-top: 0px;
@@ -507,6 +512,7 @@ body {
 #order #order-clic:hover {
   opacity: 0.8;
   cursor: pointer;
+  box-shadow: 0px 5px 5px #a5a5a5;
 }
 
 @keyframes fadein {
