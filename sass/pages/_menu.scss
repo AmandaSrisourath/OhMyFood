@@ -71,11 +71,11 @@
         &:active {
             .fa-check-circle {
                 transform: rotate(360deg);
-                transition: transform 400ms ease-in-out;
+                transition: transform 300ms ease-in-out;
             }
 
             .check {
-                transform: scale(1,1);
+                transform: scale(1);
                 width: auto;
                 padding: 0 20px;
             }
@@ -87,10 +87,9 @@
             background-color: $color-tertiary;
             font-size: 20px;
             border-radius: 1px 16px 16px 1px;
-            transform: scale(0,1);
+            transform: scale(0);
             transform-origin: right;
-            transition: transform 400ms ease-in-out;
-            transition: padding 400ms ease-in-out;
+            transition: padding 300ms ease-in-out;
             width: 0px;
             height: 72px;
             padding: 0;
@@ -175,7 +174,6 @@
 
     #cover-image {
         width: 100%;
-        object-fit: cover;
     }
 
     h2, h3 {
@@ -201,7 +199,6 @@
 
     #cover-image {
         width: 100%;
-        object-fit: cover;
     }
 
     h2, h3 {
@@ -217,5 +214,5 @@
         width: 296px;
         margin-right: 8px;
         margin-left: 8px;
-    }
+    }  
 }

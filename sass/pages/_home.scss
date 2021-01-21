@@ -44,7 +44,6 @@ body {
         #explore-clic {
             padding: 16px 24px;
             @include button;
-            @include shadow-box;
         }   
     }
 }
@@ -55,7 +54,11 @@ h3 {
 }
 
 nav {
-    margin: 40px 16px; 
+    margin: 40px 16px;
+
+    #navigation {
+        margin-left: 16px;
+    }
 
     p {
         font-family: "roboto-medium";
@@ -157,14 +160,6 @@ section {
         padding: 8px 16px 8px;
     }
 
-    .fa-heart {
-        font-size: 24px;
-    
-        .fa-heart:focus {
-            outline: none;
-        }
-    }
-
     .heart {
         @include heart-fill;
         cursor: pointer;
@@ -257,12 +252,8 @@ section {
     #navigation {
         display: flex;
         .nav-menu {
-            position: relative;
             margin-right: 16px;
             margin-left: 16px;
-            .number {
-                left: -13px;
-            }
         }
     }
 }
@@ -293,12 +284,8 @@ section {
         display: flex;
         justify-content: center;
         .nav-menu {
-            position: relative;
             margin-right: 16px;
             margin-left: 16px;
-            .number {
-                left: -13px;
-            }
         }
     }
     nav p {

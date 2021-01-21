@@ -80,7 +80,6 @@ body {
   margin-top: 24px;
   margin-bottom: 16px;
   outline: none;
-  box-shadow: 0px 5px 5px #e3e3e3;
 }
 #company-description #explore #explore-clic:hover {
   opacity: 0.8;
@@ -95,6 +94,9 @@ h3 {
 
 nav {
   margin: 40px 16px;
+}
+nav #navigation {
+  margin-left: 16px;
 }
 nav p {
   font-family: "roboto-medium";
@@ -185,14 +187,7 @@ section .restaurant-description {
   align-items: center;
   padding: 8px 16px 8px;
 }
-section .fa-heart {
-  font-size: 24px;
-}
-section .fa-heart .fa-heart:focus {
-  outline: none;
-}
 section .heart {
-  color: #9356DC;
   cursor: pointer;
 }
 section .heart:active .full-heart {
@@ -300,12 +295,8 @@ body {
     display: flex;
   }
   #navigation .nav-menu {
-    position: relative;
     margin-right: 16px;
     margin-left: 16px;
-  }
-  #navigation .nav-menu .number {
-    left: -13px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -335,12 +326,8 @@ body {
     justify-content: center;
   }
   #navigation .nav-menu {
-    position: relative;
     margin-right: 16px;
     margin-left: 16px;
-  }
-  #navigation .nav-menu .number {
-    left: -13px;
   }
 
   nav p {
@@ -429,10 +416,10 @@ body {
 }
 #la-palette .menu:active .fa-check-circle {
   transform: rotate(360deg);
-  transition: transform 400ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 #la-palette .menu:active .check {
-  transform: scale(1, 1);
+  transform: scale(1);
   width: auto;
   padding: 0 20px;
 }
@@ -444,10 +431,9 @@ body {
   background-color: #99E2D0;
   font-size: 20px;
   border-radius: 1px 16px 16px 1px;
-  transform: scale(0, 1);
+  transform: scale(0);
   transform-origin: right;
-  transition: transform 400ms ease-in-out;
-  transition: padding 400ms ease-in-out;
+  transition: padding 300ms ease-in-out;
   width: 0px;
   height: 72px;
   padding: 0;
@@ -543,7 +529,6 @@ body {
 
   #cover-image {
     width: 100%;
-    object-fit: cover;
   }
 
   h2, h3 {
@@ -568,7 +553,6 @@ body {
 
   #cover-image {
     width: 100%;
-    object-fit: cover;
   }
 
   h2, h3 {
