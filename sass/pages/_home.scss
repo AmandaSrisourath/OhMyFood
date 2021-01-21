@@ -37,15 +37,10 @@ body {
         font-size: 18px;
     }
 
-    #explore {
-        display: flex;
-        justify-content: center;
-    
-        #explore-clic {
-            padding: 16px 24px;
-            @include button;
-        }   
-    }
+    #explore-clic {
+        padding: 16px 24px;
+        @include button;
+    }  
 }
 
 h3 {
@@ -161,6 +156,7 @@ section {
     }
 
     .heart {
+        display: flex;
         @include heart-fill;
         cursor: pointer;
     }

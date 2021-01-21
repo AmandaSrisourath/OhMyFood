@@ -66,11 +66,7 @@ body {
   font-family: "roboto-thin";
   font-size: 18px;
 }
-#company-description #explore {
-  display: flex;
-  justify-content: center;
-}
-#company-description #explore #explore-clic {
+#company-description #explore-clic {
   padding: 16px 24px;
   font-size: 14px;
   color: white;
@@ -81,7 +77,7 @@ body {
   margin-bottom: 16px;
   outline: none;
 }
-#company-description #explore #explore-clic:hover {
+#company-description #explore-clic:hover {
   opacity: 0.8;
   cursor: pointer;
   box-shadow: 0px 5px 5px #a5a5a5;
@@ -188,6 +184,7 @@ section .restaurant-description {
   padding: 8px 16px 8px;
 }
 section .heart {
+  display: flex;
   cursor: pointer;
 }
 section .heart:active .full-heart {
