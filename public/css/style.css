@@ -73,14 +73,15 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 32px 32px;
+  box-shadow: 0px 5px 5px #cecece;
   margin-top: 24px;
   margin-bottom: 16px;
   outline: none;
 }
 #company-description #explore-clic:hover {
   opacity: 0.8;
+  box-shadow: 0px 5px 5px #919191;
   cursor: pointer;
-  box-shadow: 0px 5px 5px #a5a5a5;
 }
 
 h3 {
@@ -89,7 +90,7 @@ h3 {
 }
 
 nav {
-  margin: 40px 16px;
+  margin: 56px 16px;
 }
 nav #navigation {
   margin-left: 16px;
@@ -101,10 +102,10 @@ nav .nav-menu {
   display: flex;
   align-items: center;
   background-color: #F7F7F7;
-  border-radius: 16px 16px;
+  border-radius: 22px 22px;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   position: relative;
   box-shadow: 0px 5px 5px #e3e3e3;
 }
@@ -118,8 +119,8 @@ nav .number {
 }
 nav .fas {
   color: #848484;
-  padding-left: 40px;
-  padding-right: 32px;
+  padding-left: 36px;
+  padding-right: 24px;
 }
 nav .nav-menu-purple {
   background-color: #f2eafb;
@@ -134,8 +135,8 @@ h4, p {
 }
 
 section {
-  margin-top: 32px;
-  padding: 32px 16px;
+  margin-top: 64px;
+  padding: 30px 20px 48px;
   background-color: #F7F7F7;
 }
 section .restaurant {
@@ -143,12 +144,12 @@ section .restaurant {
   width: fit-content;
   background-color: white;
   border-radius: 16px 16px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   box-shadow: 0px 5px 5px #e3e3e3;
 }
 section .restaurant-image {
-  width: 328px;
-  height: 180px;
+  width: 320px;
+  height: 176px;
   border-radius: 16px 16px 1px 1px;
   object-fit: cover;
 }
@@ -281,19 +282,23 @@ body {
     flex-wrap: wrap;
   }
   #restaurant-menu .restaurant {
-    margin: 15px 15px;
+    margin: 16px 17px;
   }
 
   h3 {
     margin-left: 24px;
   }
 
-  #navigation {
+  nav #navigation {
     display: flex;
+    margin-left: 6px;
   }
-  #navigation .nav-menu {
+  nav #navigation .nav-menu {
     margin-right: 16px;
     margin-left: 16px;
+  }
+  nav p {
+    padding-right: 32px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -311,22 +316,24 @@ body {
     margin: 15px 15px;
   }
   #restaurant-menu .restaurant .restaurant-image {
-    width: 454px;
+    width: 450px;
   }
 
   h3 {
     margin-left: 24px;
   }
 
-  #navigation {
+  nav #navigation {
     display: flex;
     justify-content: center;
+    margin-left: 6px;
   }
-  #navigation .nav-menu {
+  nav #navigation .nav-menu {
     margin-right: 16px;
     margin-left: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
-
   nav p {
     padding-right: 32px;
   }
@@ -487,15 +494,15 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 32px 32px;
+  box-shadow: 0px 5px 5px #cecece;
   margin-top: 24px;
   margin-bottom: 16px;
   outline: none;
-  box-shadow: 0px 5px 5px #e3e3e3;
 }
 #order #order-clic:hover {
   opacity: 0.8;
+  box-shadow: 0px 5px 5px #919191;
   cursor: pointer;
-  box-shadow: 0px 5px 5px #a5a5a5;
 }
 
 @keyframes fadein {
@@ -538,7 +545,7 @@ body {
   }
 
   .menu {
-    width: 213px;
+    width: 210px;
     margin-right: 8px;
     margin-left: 8px;
   }
@@ -562,7 +569,7 @@ body {
   }
 
   .menu {
-    width: 296px;
+    width: 294px;
     margin-right: 8px;
     margin-left: 8px;
   }
@@ -581,7 +588,7 @@ header h1 {
 
 footer {
   background-color: #383838;
-  padding: 16px 24px 32px;
+  padding: 18px 24px 32px;
 }
 footer h5 {
   font-family: "shrikhand", Arial, Helvetica, sans-serif;
@@ -589,7 +596,7 @@ footer h5 {
   font-size: 16px;
   font-weight: normal;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   color: white;
 }
 footer p {

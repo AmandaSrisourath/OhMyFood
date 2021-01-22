@@ -49,7 +49,7 @@ h3 {
 }
 
 nav {
-    margin: 40px 16px;
+    margin: 56px 16px;
 
     #navigation {
         margin-left: 16px;
@@ -63,10 +63,10 @@ nav {
         display: flex;
         align-items: center;
         background-color: $main-grey;
-        border-radius: 16px 16px;
+        border-radius: 22px 22px;
         padding-top: 24px;
         padding-bottom: 24px;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
         position: relative;
         @include shadow-box;
     }
@@ -82,8 +82,8 @@ nav {
     
     .fas {
         color: darken($main-grey, 45);
-        padding-left: 40px;
-        padding-right: 32px;
+        padding-left: 36px;
+        padding-right: 24px;
     }
 
     .nav-menu-purple {
@@ -101,8 +101,8 @@ h4, p {
 }
 
 section {
-    margin-top: 32px;
-    padding: 32px 16px;
+    margin-top: 64px;
+    padding: 30px 20px 48px;
     background-color: $main-grey;
     
     .restaurant {
@@ -110,13 +110,13 @@ section {
         width: fit-content;
         background-color: white;
         border-radius: 16px 16px;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
         @include shadow-box;
     }
 
     .restaurant-image {
-        width: 328px;
-        height: 180px;
+        width: 320px;
+        height: 176px;
         border-radius: 16px 16px 1px 1px;
         object-fit: cover;
     }
@@ -237,7 +237,7 @@ section {
         display: flex;
         flex-wrap: wrap;
         .restaurant {
-            margin: 15px 15px;
+            margin: 16px 17px;
         }
     }
 
@@ -245,12 +245,19 @@ section {
         margin-left: 24px;
     }
 
-    #navigation {
-        display: flex;
-        .nav-menu {
-            margin-right: 16px;
-            margin-left: 16px;
+    nav {
+        #navigation {
+            display: flex;
+            margin-left: 6px;
+            .nav-menu {
+                margin-right: 16px;
+                margin-left: 16px;
+            }
         }
+        p {
+            padding-right: 32px;
+        }
+        
     }
 }
 
@@ -267,7 +274,7 @@ section {
         .restaurant {
             margin: 15px 15px;
             .restaurant-image {
-                width: 454px;
+                width: 450px;
             }
         }
     }
@@ -276,16 +283,21 @@ section {
         margin-left: 24px;
     }
 
-    #navigation {
-        display: flex;
-        justify-content: center;
-        .nav-menu {
-            margin-right: 16px;
-            margin-left: 16px;
+    nav {
+        #navigation {
+            display: flex;
+            justify-content: center;
+            margin-left: 6px;
+            .nav-menu {
+                margin-right: 16px;
+                margin-left: 16px;
+                padding-left: 6px;
+                padding-right: 6px;
+            }
         }
-    }
-    nav p {
-        padding-right: 32px;
+        p {
+            padding-right: 32px;
+        }
     }
 
     section .button-new {
